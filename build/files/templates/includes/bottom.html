@@ -1,0 +1,56 @@
+				</div> <!-- /#content -->
+				
+				<div id="footer">
+					
+					<div>
+						
+						<p>&copy; 2014 Freshops. All Rights Reserved.</p>
+						<p>Main: (541) 929-2736 &middot; Toll-free: (800) 460-6925 &middot; Fax: (541) 929-2702</p>
+						<p>36180 Kings Valley Hwy. Philomath, OR 97370 &middot; <a href="/contact/send">Email</a></p>
+						<p>Site by <a href="http://www.beekmedia.com" rel="external">Beekmedia Design</a></p>
+						
+					</div>
+					
+				</div> <!-- /#footer -->
+				
+			</div> <!-- /#wrap -->
+			
+		</div> <!-- /#primary -->
+		
+	</div> <!-- /#container -->
+	
+	<!-- @if NODE_ENV == 'DEVELOPMENT' -->
+	
+	<script src="./scripts/jquery.js"></script>
+	<script src="./scripts/fastclick.js"></script>
+	<script src="./scripts/jquery.cookie.js"></script>
+	<script src="./scripts/jquery.hoverIntent.js"></script>
+	<script src="./scripts/superfish.js"></script>
+	<script src="./scripts/<!-- @echo name -->.js"></script>
+	<script src="./scripts/<!-- @echo name -->.mod.fastclick.js"></script>
+	<script src="./scripts/<!-- @echo name -->.mod.test.js"></script>
+	<script src="./scripts/<!-- @echo name -->.init.js"></script>
+	<script src="./scripts/development.js"></script>
+	
+	<script>
+		
+		$(function() {});
+		
+		$(document).ready(function() {});
+		
+		$(window).load(function() {});
+		
+		$(window).resize(function() {});
+		
+	</script>
+	
+	<!-- @endif -->
+	
+	<!-- @if NODE_ENV == 'PRODUCTION' -->
+	
+	<script src="<!-- @echo production -->/prod/<!-- @echo version -->/<!-- @echo now -->/<!-- @echo ver -->/scripts/<!-- @echo name -->.min.js"></script>
+	
+	<!-- @endif -->
+	
+</body>
+</html>

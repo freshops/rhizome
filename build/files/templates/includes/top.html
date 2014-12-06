@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width">
+	
+	<title><!--@echo title--> | v<!--@echo version--> | <!--@echo NODE_ENV--></title>
+	<meta name="description" content="<!--@echo description-->">
+	
+	<!-- @if NODE_ENV == 'DEVELOPMENT' -->
+	
+	<link rel="stylesheet" href="./styles/<!-- @echo name -->.css">
+	<link rel="stylesheet" href="./styles/development.css">
+	
+	<!-- @endif -->
+	
+	<!-- @if NODE_ENV == 'PRODUCTION' -->
+	
+	<link rel="stylesheet" href="<!-- @echo production -->/prod/<!-- @echo version -->/<!-- @echo now -->/<!-- @echo ver -->/styles/<!-- @echo name -->.min.css">
+	
+	<!-- @endif -->
+	
+	<meta name="robots" content="noindex">
+	
+</head>
+<body>
+	
+	<div id="container" class="clear">
+		
+		<div id="secondary">
+			
+			<div id="flag"><h6><a href="/index.php">Freshops: <em>Purveyors of Fine Hops</em></a></h6></div>
+			
+			<hr>
+			
+			<div id="order">
+				
+				<div><a href="/cgi-bin/shopper.cgi?listcategories=action"></a></div>
+				
+				<ul>
+					<li><a href="#">Order Whole Hops</a></li>
+					<li><a href="#">Order Hop Rhizomes (plants)</a></li>
+					<li><a href="#">Order Merchandise</a></li>
+					<li><a href="#">Mail &amp; Fax Orders</a></li>
+					<li><a href="#">International Orders</a></li>
+					<li><a href="#">Testimonials</a></li>
+				</ul>
+				
+			</div> <!-- /#order -->
+			
+			<hr>
+				
+			<ul id="menu" class="clear">
+				<li>
+					<a id="menu_01" class="top" href="#">Hops Whole Dried Flowers</a>
+					<ul>
+						<li>
+							<a href="#">Hop Variety Descriptions</a>
+							<ol>
+								<li><a href="#">Variety Descriptions</a></li>
+								<li><a href="#">Major US-grown Varieties</a></li>
+							</ol>
+						</li>
+						<li><a href="#">Order Whole Hops</a></li>
+						<li>
+							<a href="#">Current Alpha Acid Percentages</a>
+							<ol>
+								<li><a href="#">Alpha Acid Percentages</a></li>
+								<li><a href="#">Ordering Instructions</a></li>
+							</ol>
+						</li>
+						<li>
+							<a href="#">Homebrewing Basics</a>
+							<ol>
+								<li><a href="#">General Overview</a></li>
+								<li><a href="#">Ingredients</a></li>
+								<li><a href="#">Equipment</a></li>
+								<li><a href="#">Brewing Process</a></li>
+							</ol>
+						</li>
+						<li><a href="#">USDA Variety Descriptions</a></li>
+					</ul>
+				</li>
+				<li>
+					<a id="menu_02" class="top" href="#">Hop Growing</a>
+					<ul>
+						<li>
+							<a href="#">Rhizome Information</a>
+							<ol>
+								<li><a href="#">Rhizome Variety List</a></li>
+								<li><a href="#">General Characteristics</a></li>
+								<li><a href="#">Quarantine Restrictions</a></li>
+							</ol>
+						</li>
+						<li><a href="#">Order Hop Rhizomes (plants)</a></li>
+						<li>
+							<a href="#">Hop Gardening</a>
+							<ol>
+								<li><a href="#">Introduction</a></li>
+								<li><a href="#">Planting</a></li>
+								<li><a href="#">Growth Cycle</a></li>
+								<li><a href="#">Production</a></li>
+								<li><a href="#">Pruning</a></li>
+								<li><a href="#">Spacing and Support</a></li>
+								<li><a href="#">Harvest</a></li>
+								<li><a href="#">Drying</a></li>
+								<li><a href="#">Diseases and Pests</a></li>
+							</ol>
+						</li>
+						<li>
+							<a href="#">Hop Diseases and Pests</a>
+							<ol>
+								<li><a href="#">Introduction</a></li>
+								<li><a href="#">Nutrient Deficiency Symptoms</a></li>
+								<li><a href="#">Aphids</a></li>
+								<li><a href="#">Spider Mites</a></li>
+								<li><a href="#">Powdery Mildew</a></li>
+								<li><a href="#">Downy Mildew</a></li>
+								<li><a href="#">Control Options for the Mildews</a></li>
+								<li><a href="#">Black Root Rot</a></li>
+								<li><a href="#">Viruses</a></li>
+							</ol>
+						</li>
+						<li><a href="#">Homegrown Hop Yards</a></li>
+					</ul>
+				</li>
+				<li>
+					<a id="menu_03" class="top" href="#">Freshops Merchandise</a>
+					<ul>
+						<li><a href="#">Books</a></li>
+						<li><a href="#">Clothing</a></li>
+						<li><a href="#">Accessories</a></li>
+					</ul>
+				</li>
+				<li>
+					<a id="menu_04" class="top" href="#">Videos</a>
+					<ul>
+						<li><a href="#">Oregon Hops</a></li>
+						<li>
+							<a href="#">An Introduction to the US Hop Industry</a>
+							<ol>
+								<li><a href="#">Part 1</a></li>
+								<li><a href="#">Part 2</a></li>
+								<li><a href="#">Part 3</a></li>
+								<li><a href="#">Part 4</a></li>
+							</ol>
+						</li>
+						<li>
+							<a href="#">History of Hops in the Willamette Valley</a>
+							<ol>
+								<li><a href="#">Part 1</a></li>
+								<li><a href="#">Part 2</a></li>
+								<li><a href="#">Part 3</a></li>
+							</ol>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Hop Links</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			
+		<div id="hops"><div></div></div>
+		
+	</div> <!-- /#secondary -->
+	
+	<hr>
+	
+	<div id="primary">
+		
+		<div id="wrap">
+			
+			<div id="badge"><div></div></div>
+			
+			<div id="location"><div><h1>Purveyors of Fine&#160;Hops</h1></div></div>
+			
+			<div id="content">

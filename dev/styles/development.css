@@ -1,0 +1,22 @@
+/**
+ * rhizome
+ * The Freshops theme.
+ *
+ * @author Micky Hulse
+ * @link http://mky.io
+ * @docs https://github.com/freshops/rhizome
+ * @copyright Copyright (c) 2014 Micky Hulse.
+ * @license Released under the Copyright © 2014 Freshops. All rights reserved..
+ * @version 0.1.0
+ * @date 2014/12/06
+ */
+
+
+.foo {
+  font-size: smaller;
+  color: #333;
+  border: 10px solid #666;
+  margin: 50px;
+  padding: 100px;
+  display: block;
+}

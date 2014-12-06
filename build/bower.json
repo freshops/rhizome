@@ -1,0 +1,19 @@
+{
+  "name": "bower",
+  "dependencies": {
+    "fastclick": "~1",
+    "jquery": "~2",
+    "jquery.cookie": "~1",
+    "jquery-hoverIntent": "~1",
+    "normalize-css": "~3",
+    "superfish": "~1"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "": "dist/jquery.js"
+    }
+  },
+  "resolutions": {
+    "jquery": "~2"
+  }
+}
