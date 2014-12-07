@@ -2,12 +2,11 @@
   "name": "bower",
   "dependencies": {
     "fastclick": "~1",
+    "nutshell": "https://github.com/mhulse/jquery-nutshell.git#v1",
     "jquery": "~2",
     "jquery.cookie": "~1",
-    "jquery-hoverIntent": "~1",
     "meanMenu": "https://github.com/meanthemes/meanMenu.git",
-    "normalize-css": "~3",
-    "superfish": "~1"
+    "normalize-css": "~3"
   },
   "exportsOverride": {
     "jquery": {
@@ -19,8 +18,5 @@
         "meanmenu.css"
       ]
     }
-  },
-  "resolutions": {
-    "jquery": "~2"
   }
 }
