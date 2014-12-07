@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © 2014 Freshops. All rights reserved..
  * @version 0.1.0
- * @date 2014/12/06
+ * @date 2014/12/07
  */
 
 
@@ -576,51 +576,124 @@ a.meanmenu-reveal {
   display: none !important;
 }
 
+@media all and (min-width: 640px) {
+  .mean-container {
+    display: none;
+  }
+}
+
+.mean-container .mean-bar {
+  background-color: #000;
+  width: auto;
+  float: none;
+  z-index: 5;
+}
+
+.mean-container .mean-nav {
+  background-color: #111;
+  width: auto;
+  float: none;
+}
+
+.mean-container .mean-nav ul li {
+  width: auto;
+  float: none;
+}
+
+.mean-container .mean-nav ul li a {
+  border-top-color: #333;
+  float: none;
+}
+
+.mean-container .mean-push {
+  width: auto;
+  float: none;
+}
+
+.mean-nav .wrapper {
+  width: auto;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+  margin-top: 1px;
+  width: 26px;
+  height: 32px;
+  padding: 12px !important;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.1);
+  border: none !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.mean-container .mean-nav ul li a.mean-expand:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a
+a:visited {
+  color: #057db9;
+  text-decoration: none;
+}
+a:visited:hover, a:focus, a:focus:hover, a:hover, a:active {
+  color: #057db9;
+  text-decoration: underline;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   height: auto !important;
   height: 100%;
   min-height: 100%;
+  overflow-y: scroll;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+body {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Arial, sans-serif;
+  color: #000;
   background: #c9d9af;
 }
 @media all and (min-width: 640px) {
-  html {
+  body {
     background-image: url(../images/bg.png);
     background-repeat: repeat-y;
   }
 }
 
-#container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#secondary {
-  width: 250px;
-  float: left;
-  display: none;
-}
-* html #secondary {
-  margin-right: 7px;
-}
-@media all and (min-width: 640px) {
-  #secondary {
-    display: inline;
-  }
-}
-
 #flag {
-  width: 250px;
-  height: 247px;
+  width: 143px;
+  height: 36px;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 100;
 }
 #flag a {
   text-indent: -999em;
-  background-image: url(../images/freshops-logo.png);
+  background-image: url(../images/freshops-logo-small.png);
   background-repeat: no-repeat;
-  background-position: 0 -247px;
+  background-size: cover;
   width: 100%;
   height: 100%;
   display: block;
@@ -631,164 +704,195 @@ html {
 #flag a:active, #flag a:focus {
   outline: none;
 }
+@media all and (min-width: 640px) {
+  #flag a {
+    background-image: url(../images/freshops-logo.png);
+    background-position: 0 -247px;
+  }
+}
+@media all and (min-width: 640px) {
+  #flag {
+    width: 250px;
+    height: 247px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+}
 
-#order {
-  padding: 0 0 10px;
-  background: #1a1a1a;
+@media all and (min-width: 640px) {
+  #container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
-#order div {
-  background: url(../images/order-button.png) no-repeat center top;
-  height: 50px;
-}
-#order div a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-#order ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.js #order ul {
+
+#secondary {
   display: none;
 }
-#order ul li {
-  list-style-type: none;
-  background: #0f0f0f;
-  border: 2px solid #242424;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  margin: 3px 25px;
-  line-height: normal;
-}
-#order ul li a {
-  font-size: 93%;
-  text-decoration: none;
-  display: block;
-  padding: 5px;
-}
-#order ul li a, #order ul li a:visited {
-  color: #719b37;
-}
-#order ul li a:visited:hover, #order ul li a:focus, #order ul li a:focus:hover, #order ul li a:hover, #order ul li a:active {
-  color: #bbb749;
-  text-decoration: none;
+@media all and (min-width: 640px) {
+  #secondary {
+    padding-top: 247px;
+    width: 250px;
+    float: left;
+    display: inline;
+  }
+  * html #secondary {
+    margin-right: 7px;
+  }
 }
 
-#menu ul {
-  line-height: 1;
-  background: #000;
-}
-#menu ul:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-#menu ul, #menu ul * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-#menu ul li a {
-  padding: 5px 10px;
-  font-weight: bold;
-  font-size: 93%;
-  letter-spacing: .05em;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: #0f0f0f;
-  border-width: 1px 0;
-  border-style: solid;
-  border-color: #000;
-  margin: -1px 0 0;
-}
-#menu ul li a, #menu ul li a:visited {
-  color: #f6f9f1;
-}
-#menu ul li a:visited:hover, #menu ul li a:focus, #menu ul li a:focus:hover, #menu ul li a:hover, #menu ul li a:active {
-  background: #a8b295;
-  color: #061c06;
-  outline: 0;
-}
-#menu ul li ul li a {
-  color: #939d83;
-  line-height: 1.5;
-  padding-left: 15px;
-  border-width: 1px 0;
-  border-style: solid;
-  border-color: #000;
-  background: #151713;
-  text-transform: none;
-  margin: -1px 0 0;
-}
-#menu ul li ul li ol li a {
-  font-weight: normal;
-  background: #2a2d25;
-  font-size: 85%;
-}
-.js #menu ul ul,
-.js #menu ul ol {
-  display: none;
+@media all and (min-width: 640px) {
+  #order {
+    padding: 0 0 10px;
+    background: #1a1a1a;
+  }
+  #order div {
+    background: url(../images/order-button.png) no-repeat center top;
+    height: 50px;
+  }
+  #order div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #order ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .js #order ul {
+    display: none;
+  }
+  #order ul li {
+    list-style-type: none;
+    background: #0f0f0f;
+    border: 2px solid #242424;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 3px 25px;
+    line-height: normal;
+  }
+  #order ul li a {
+    font-size: 93%;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+  }
+  #order ul li a, #order ul li a:visited {
+    color: #719b37;
+  }
+  #order ul li a:visited:hover, #order ul li a:focus, #order ul li a:focus:hover, #order ul li a:hover, #order ul li a:active {
+    color: #bbb749;
+    text-decoration: none;
+  }
 }
 
-#hops {
-  position: relative;
-}
-#hops div {
-  width: 301px;
-  height: 644px;
-  position: absolute;
-  z-index: 200;
-  top: 0;
-  left: 0;
-}
-html > body #hops div {
-  background: url(../images/hop-graphic.png) no-repeat;
-}
-* html #hops div {
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/hop-graphic.png', sizingMethod='scale');
+@media all and (min-width: 640px) {
+  #menu ul {
+    line-height: 1;
+    background: #000;
+  }
+  #menu ul, #menu ul * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #menu ul li a {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 93%;
+    letter-spacing: .05em;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #0f0f0f;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #000;
+    margin: -1px 0 0;
+  }
+  #menu ul li a, #menu ul li a:visited {
+    color: #f6f9f1;
+  }
+  #menu ul li a:visited:hover, #menu ul li a:focus, #menu ul li a:focus:hover, #menu ul li a:hover, #menu ul li a:active {
+    background: #a8b295;
+    color: #061c06;
+    outline: 0;
+  }
+  #menu ul li ul li a {
+    color: #939d83;
+    line-height: 1.5;
+    padding-left: 15px;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #000;
+    background: #151713;
+    text-transform: none;
+    margin: -1px 0 0;
+  }
+  #menu ul li ul li ol li a {
+    font-weight: normal;
+    background: #2a2d25;
+    font-size: 85%;
+  }
+  .js #menu ul ul,
+  .js #menu ul ol {
+    display: none;
+  }
 }
 
-* html #primary {
-  height: 1%;
-  margin: 0;
+@media all and (min-width: 640px) {
+  #hops {
+    position: relative;
+  }
+  #hops div {
+    background: url(../images/hop-graphic.png) no-repeat;
+    width: 301px;
+    height: 644px;
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;
+  }
 }
-#primary:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 @media all and (min-width: 640px) {
   #primary {
     margin-left: 260px;
   }
+  #primary:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 #wrap {
-  width: 100%;
-  float: left;
-  display: inline;
-  background: #e8efdc url(../images/shadow-02.png) repeat-y;
+  position: relative;
+  background: #e8efdc;
+}
+@media all and (min-width: 640px) {
+  #wrap {
+    width: 100%;
+    float: left;
+    display: inline;
+    background-image: url(../images/shadow-02.png);
+    background-repeat: repeat-y;
+  }
 }
 
 #badge {
-  position: relative;
-}
-#badge div {
+  background: url(../images/badge.png) no-repeat;
   width: 79px;
   height: 79px;
   position: absolute;
   z-index: 100;
   top: 5px;
   left: 10px;
-}
-html > body #badge div {
-  background: url(../images/badge.png) no-repeat;
-}
-* html #badge div {
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/badge.png', sizingMethod='scale');
 }
 
 #location {
@@ -799,7 +903,7 @@ html > body #badge div {
 }
 #location div h1 {
   margin: 0 0 0 95px;
-  padding: 10px 0 15px;
+  padding: 10px 0;
   color: #3a770c;
   text-transform: uppercase;
   letter-spacing: .05em;
@@ -809,7 +913,8 @@ html > body #badge div {
 
 #content {
   background: url(../images/grunge-03.png) no-repeat;
-  padding: 40px 50px 0 50px;
+  padding: 40px 50px 1px 50px;
+  margin-bottom: -1px;
 }
 
 #footer {
@@ -834,4 +939,50 @@ html > body #badge div {
 }
 #footer a:hover {
   text-decoration: underline;
+}
+
+.nav {
+  background: #c9d9af url(../images/border-02.png) repeat-x left bottom;
+}
+.nav div {
+  background: url(../images/grunge-02.png) no-repeat left bottom;
+}
+.nav ul {
+  margin: 0 0 0 95px;
+  padding: 0;
+}
+.nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nav ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: inline;
+}
+.nav ul li a {
+  font-size: 100%;
+  font-weight: bold;
+  text-decoration: none;
+  color: #59694a;
+  padding: .5em;
+  display: block;
+  cursor: pointer;
+}
+.nav ul li a:visited {
+  color: #6c6e73;
+}
+.nav ul li a:visited:hover, .nav ul li a:focus, .nav ul li a:focus:hover, .nav ul li a:hover, .nav ul li a:active, .ui-tabs-selected .nav ul li a {
+  color: #fff;
+  background: #96b477 url(../images/border-04.png) repeat-x left bottom;
+}
+.nav ul li a:active, .nav ul li a:focus {
+  outline: 0;
+}
+
+.ui-tabs-hide {
+  display: none;
 }

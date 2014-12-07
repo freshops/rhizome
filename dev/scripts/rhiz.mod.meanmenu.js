@@ -2,7 +2,7 @@ RHIZ.register(function() {
 	
 	'use strict';
 	
-	$('header nav').meanmenu({
+	$('#menu').meanmenu({
 		meanScreenWidth: '640'
 	});
 	
