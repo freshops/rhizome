@@ -1,8 +1,9 @@
 // Helpers:
-@import "partials/variables";
+@import "partials/variable";
 
-// Normalization:
-@import "partials/normalize";
+// Plugins:
+@import "partials/normalize",
+        "partials/meanmenu";
 
 // Core:
 @import "partials/base";

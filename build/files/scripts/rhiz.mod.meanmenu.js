@@ -2,6 +2,8 @@ RHIZ.register(function() {
 	
 	'use strict';
 	
-	console.log('Hello world!');
+	$('header nav').meanmenu({
+		meanScreenWidth: '640'
+	});
 	
 }); // RHIZ?

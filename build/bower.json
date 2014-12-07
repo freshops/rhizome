@@ -5,12 +5,19 @@
     "jquery": "~2",
     "jquery.cookie": "~1",
     "jquery-hoverIntent": "~1",
+    "meanMenu": "https://github.com/meanthemes/meanMenu.git",
     "normalize-css": "~3",
     "superfish": "~1"
   },
   "exportsOverride": {
     "jquery": {
       "": "dist/jquery.js"
+    },
+    "meanMenu": {
+      "": [
+        "jquery.meanmenu.js",
+        "meanmenu.css"
+      ]
     }
   },
   "resolutions": {
