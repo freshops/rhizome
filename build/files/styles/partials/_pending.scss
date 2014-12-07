@@ -1,231 +1,263 @@
-html, body {
+// Font sizes: Pixel to percent conversion:
+//     10px = 77%
+//     11px = 85%
+//     12px = 93%
+//     13px = 100%
+//     14px = 108%
+//     15px = 116%
+//     16px = 123.1%
+//     17px = 131%
+//     18px = 138.5%
+//     19px = 146.5%
+//     20px = 153.9%
+//     21px = 161.6%
+//     22px = 167%
+//     23px = 174%
+//     24px = 182%
+//     25px = 189%
+//     26px = 197%
+
+html {
+	
 	height: auto !important;
 	height: 100%;
 	min-height: 100%;
-	background: #c9d9af url(../images/template/bg.png) repeat-y;
+	background: #c9d9af url(../images/bg.png) repeat-y;
+	
+	&,
+	body { color: #394e1c; }
+	
 }
 
-body {
-	color: #394e1c;
+a {
+	
+	&
+	&:visited {
+		color: #057db9;
+		text-decoration: none;
+	}
+	&:visited:hover,
+	&:focus,
+	&:focus:hover,
+	&:hover,
+	&:active {
+		color: #057db9;
+		text-decoration: underline;
+	}
+	
 }
 
-p { font-size: 108%; }
-
-#primary { margin-left: 260px; }
-	* html #primary {
+#primary {
+	
+	margin-left: 260px;
+	
+	* html & {
 		height: 1%;
 		margin: 0;
 	}
+	
+}
+
 #secondary {
+	
 	width: 250px;
 	float: left;
 	display: inline;
+	
+	* html & { margin-right: 7px; }
+	
 }
-	* html #secondary { margin-right: 7px; }
 
 #wrap {
 	width: 100%;
 	float: left;
 	display: inline;
-	background: #e8efdc url(../images/template/shadow-02.png) repeat-y;
+	background: #e8efdc url(../images/shadow-02.png) repeat-y;
 }
 
 #order {
+	
 	padding: 0 0 10px;
 	background: #1a1a1a;
-}
-#order div {
-	background: url(../images/template/order-button.png) no-repeat center top;
-	height: 50px;
-}
-#order div a {
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-#order ul {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-#order ul li {
-	list-style-type: none;
-	background: #0f0f0f;
-	border: 2px solid #242424;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	margin: 3px 25px;
-	line-height: normal;
-}
-#order ul li a {
-	font-size: 93%;
-	text-decoration: none;
-	display: block;
-	padding: 5px;
-	color: #719b37;
-}
-#order ul li  a:visited { color: #719b37; }
-#order ul li  a:visited:hover,
-#order ul li  a:focus,
-#order ul li  a:focus:hover,
-#order ul li  a:hover,
-#order ul li  a:active {
-	color: #bbb749;
-	text-decoration: none;
+	
+	div {
+		
+		background: url(../images/order-button.png) no-repeat center top;
+		height: 50px;
+		
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		
+	}
+	
+	ul {
+		
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		
+		li {
+			
+			list-style-type: none;
+			background: #0f0f0f;
+			border: 2px solid #242424;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			margin: 3px 25px;
+			line-height: normal;
+			
+			a {
+				
+				font-size: 93%;
+				text-decoration: none;
+				display: block;
+				padding: 5px;
+				
+				&,
+				&:visited { color: #719b37; }
+				&:visited:hover,
+				&:focus,
+				&:focus:hover,
+				&:hover,
+				&:active {
+					color: #bbb749;
+					text-decoration: none;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
 }
 
-.clear:after {
-	height: 0;
-	display: block;
-	clear: both;
-	content: '.';
-	visibility: hidden;
-}
-* html .clear { zoom: 1; }
-
-#flag { overflow: hidden; }
-#flag h6 {
-	margin: 0;
-	padding: 0;
-}
-#flag,
-#flag h6,
-#flag h6 a {
+#flag {
+	
 	width: 250px;
 	height: 247px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+	a {
+		
+		text-indent: -999em;
+		background-image: url(../images/freshops-logo.png);
+		background-repeat: no-repeat;
+		background-position: 0 -247px;
+		width: 100%;
+		height: 100%;
+		display: block;
+		
+		&:hover { background-position: 0 0; }
+		&:active,
+		&:focus { outline: none; }
+		
+	}
+	
 }
-#flag h6 a {
-	text-indent: -999em;
-	background-image: url(../images/template/freshops-logo.png);
-	background-repeat: no-repeat;
-	background-position: 0 -247px;
-	display: block;
-}
-#flag h6 a:hover { background-position: 0 0; }
-/* Remove the pesky outline in Firefox: */
-/* RE: http://sonspring.com/journal/removing-dotted-links */
-#flag h6 a:active,
-#flag h6 a:focus { outline: none; }
 
-
-#hops { position: relative; }
-#hops div {
-	width: 301px;
-	height: 644px;
-	position: absolute;
-	z-index: 200;
-	top: 0;
-	left: 0;
+#hops {
+	
+	position: relative;
+	
+	div {
+		width: 301px;
+		height: 644px;
+		position: absolute;
+		z-index: 200;
+		top: 0;
+		left: 0;
+	}
+	
+	// Jump through some hoops here for the sake of old IEs:
+	html > body & div { background: url(../images/hop-graphic.png) no-repeat; }
+	* html & div { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/hop-graphic.png', sizingMethod='scale'); }
+	
 }
-html > body #hops div { background: url(../images/template/hop-graphic.png) no-repeat; }
-* html #hops div { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/template/hop-graphic.png', sizingMethod='scale'); }
 
-#badge { position: relative; }
-#badge div {
-	width: 79px;
-	height: 79px;
-	position: absolute;
-	z-index: 100;
-	top: 5px;
-	left: 10px;
+#badge {
+	
+	position: relative;
+	
+	div {
+		width: 79px;
+		height: 79px;
+		position: absolute;
+		z-index: 100;
+		top: 5px;
+		left: 10px;
+	}
+	
+	// IBID:
+	html > body & div { background: url(../images/badge.png) no-repeat; }
+	* html & div { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/badge.png', sizingMethod='scale'); }
+	
 }
-html > body #badge div { background: url(../images/template/badge.png) no-repeat; }
-* html #badge div { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/template/badge.png', sizingMethod='scale'); }
 
 #location {
-	background: #fafcf8 url(../images/template/border-01.png) repeat-x left bottom;
-}
-#location div {
-	background: url(../images/template/grunge-01.png) no-repeat left bottom;
-}
-#location div h1 {
-	margin: 0 0 0 95px;
-	padding: 10px 0 15px;
-	color: #3a770c;
-	text-transform: uppercase;
-	letter-spacing: .05em;
-	font-size: 167%;
-	line-height: 1;
-}
-.nav {
-	background: #c9d9af url(../images/template/border-02.png) repeat-x left bottom;
-}
-.nav div {
-	background: url(../images/template/grunge-02.png) no-repeat left bottom;
+	
+	background: #fafcf8 url(../images/border-01.png) repeat-x left bottom;
+	
+	div {
+		
+		background: url(../images/grunge-01.png) no-repeat left bottom;
+		
+		h1 {
+			margin: 0 0 0 95px;
+			padding: 10px 0 15px;
+			color: #3a770c;
+			text-transform: uppercase;
+			letter-spacing: .05em;
+			font-size: 167%;
+			line-height: 1;
+		}
+	
+	}
+	
 }
 
 #content {
-	background: url(../images/template/grunge-03.png) no-repeat;
-	padding: 40px 50px 0px 50px; /* was 40px 50px */
+	background: url(../images/grunge-03.png) no-repeat;
+	padding: 40px 50px 0 50px;
 }
 
 #footer {
-	background: #c9d9af url(../images/template/border-03.png) repeat-x;
+	
+	background: #c9d9af url(../images/border-03.png) repeat-x;
 	height: 359px;
-}
-#footer div {
-	height: 359px;
-	padding: 40px 50px;
-	background: url(../images/template/grunge-04.png) no-repeat;
-}
-#footer div p {
-	font-size: 100%;
-	line-height: 1.5;
-	color: #394e1c;
-	margin: 0;
-	padding: 0;
-}
-
-.center,
-.center * {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-object.center { display: block; }
-/* Hide certain elements for browsers without CSS: */
-.hide, hr { display: none !important; }
-/* Hiding of elements for assistive devices (screen readers etc): */
-.off {
-	position: absolute;
-	left: -999em;
-	top: -999em;
+	
+	div {
+		
+		height: 359px;
+		padding: 40px 50px;
+		background: url(../images/grunge-04.png) no-repeat;
+		
+		p {
+			font-size: 100%;
+			line-height: 1.5;
+			color: #394e1c;
+			margin: 0;
+			padding: 0;
+		}
+		
+	}
+	
 }
 
-/* For fluid, evenly split, columns: */
-.c49p { width: 49%; } /* Just float left/right and you're good. :) */
-/* Left floats: */
-.fl {
-	float: left;
-	display: inline;
-}
 
-/* Right floats: */
-.fr {
-	float: right;
-	display: inline;
-}
-/* Specify clears: */
-.clear:after {
-	height: 0;
-	display: block;
-	clear: both;
-	content: '.';
-	visibility: hidden;
-} /* Clears non-IE. */
-* html .clear { zoom: 1; } /* Clears IE. */
 
-/* Clearing div (oldschool): */
-div.clearer {
-	font-size: 0 !important;    /* Set the font-size to 0 so it isn't visible */
-	line-height: 0 !important;  /* Set the line-height to 0 so it isn't visible */
-	border: 0 !important;       /* Remove all borders that would make it visible */
-	margin: 0 !important;       /* Remove all margins that would make it visible */
-	padding: 0 !important;      /* Remove all padding that would make it visible */
-	height: 0.1px !important;   /* Mozilla/Firefox require the clearer height to not be 0, but rounding makes it 0 */
-	float: none !important;     /* Remove any inherited floats */
-	display: block !important;  /* Make sure our element is a block-level element */
-	clear: both !important;     /* Make sure it clears on both sides */
+
+.nav {
+	
+	background: #c9d9af url(../images/border-02.png) repeat-x left bottom;
+	
+	div { background: url(../images/grunge-02.png) no-repeat left bottom; }
+	
 }
 
 /* Note: Move below to "navigation.css" later. */
@@ -260,199 +292,97 @@ div.clearer {
 .nav ul li a:active,
 .nav ul li.ui-tabs-selected a {
 	color: #fff;
-	background: #96b477 url(../images/template/border-04.png) repeat-x left bottom;
+	background: #96b477 url(../images/border-04.png) repeat-x left bottom;
 }
 /* Looks better: */
 .nav ul li a:active,
 .nav ul li a:focus { outline: 0; }
 
-/*----------( TABLES: )---------*/
-.table-01 {
-	font-size: inherit;
-	color: #394e1c;
-	background-color: #939d83;
-	border-collapse: separate;
-	border-spacing: 1px;
-	width: 100%;
-	margin: 0 auto 20px;
-}
-* html .table-01 { width: 99%; } /* Just being safe. */
-.table-01 caption {
-	font-weight: bold;
-	text-align: center;
-	text-transform: uppercase;
-	color: #69705d;
-	background: #bdc9a8;
-	border-bottom: 2px solid #a8b295;
-	margin: 0;
-	padding: 5px;
-	-moz-border-radius: 5px 5px 0 0;
-	-webkit-border-radius: 5px 5px 0 0;
-}
-.table-01 td,
-.table-01 th { padding: 4px; }
-.table-01 thead th {
-	font-size: 93%;
-	color: #69705d;
-	text-align: center;
-	text-transform: uppercase;
-	border: 1px solid #f6f9f1;
-	background: #d2dfba;
-	padding: 4px;
-}
-.table-01 tbody th {
-	font-size: 85%;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #69705d;
-	border: none;
-	background: #d2dfba;
-}
-.table-01 tbody tr {
-	text-align: left;
-	background: #fff;
-}
-.table-01 tbody tr:nth-child(even) /*.table-01 tbody tr.odd */ 	{
-	border-top: 1px solid #f6f9f1;
-	background: #fff;
-}
-.table-01 tbody tr td {
-	font-size: 85%;
-	border: 1px solid #f6f9f1;
-	background: #f6f9f1;
-}
-.table-01 tbody tr:nth-child(even) td /* .table-01 tbody tr.odd td */ {
-	border-top: 1px solid #f6f9f1;
-	background: #edf2e3;
-}
-.table-01 tfoot th {
-	font-size: 93%;
-	font-weight: normal;
-	text-align: right;
-	text-transform: none;
-	color: #69705d;
-	background: #bdc9a8;
-	border: 1px solid #f6f9f1;
-	padding: 4px;
-}
 
 
 
 
 
 
-ul#menu,
-ul#menu * {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
 ul#menu {
+	
 	line-height: 1;
 	background: #000;
-}
-/* Level 01: */
-	ul#menu li a {
-		padding: 5px 10px;
-		font-weight: bold;
-		font-size: 93%;
-		letter-spacing: .05em;
-		display: block;
-		text-decoration: none;
-		text-transform: uppercase;
-		background: #0f0f0f;
-		border-width: 1px 0;
-		border-style: solid;
-		border-color: #000;
-		margin: -1px 0 0;
+	
+	&,
+	& * {
+		margin: 0;
+		padding: 0;
+		list-style: none;
 	}
-	ul#menu li a,
-	ul#menu li a:visited  {
-		color: #f6f9f1;
+	
+	li {
+		
+		a {
+			
+			padding: 5px 10px;
+			font-weight: bold;
+			font-size: 93%;
+			letter-spacing: .05em;
+			display: block;
+			text-decoration: none;
+			text-transform: uppercase;
+			background: #0f0f0f;
+			border-width: 1px 0;
+			border-style: solid;
+			border-color: #000;
+			margin: -1px 0 0;
+			
+			&,
+			&:visited { color: #f6f9f1; }
+			&:visited:hover,
+			&:focus,
+			&:focus:hover,
+			&:hover,
+			&:active {
+				background: #a8b295;
+				color:#061c06;
+				outline: 0;
+			}
+			
+		}
+		
+		& ul {
+			
+			li a {
+				color: #939d83;
+				line-height: 1.5;
+				padding-left: 15px;
+				border-width: 1px 0;
+				border-style: solid;
+				border-color: #000;
+				background: #151713;
+				text-transform: none;
+				margin: -1px 0 0;
+			}
+			
+			li ol li a {
+				font-weight: normal;
+				background: #2a2d25;
+				font-size: 85%;
+			}
+			
+		}
+		
 	}
-ul#menu li ul li a {
-	color: #939d83;
-	line-height: 1.5;
-	padding-left: 15px;
-	border-width: 1px 0;
-	border-style: solid;
-	border-color: #000;
-	background: #151713;
-	text-transform: none;
-	margin: -1px 0 0;
-}
-ul#menu li ul li ol li a {
-	font-weight: normal;
-	background: #2a2d25;
-	font-size: 85%;
-}
-
-ul#menu li a:hover,
-ul#menu li a:focus,
-ul#menu li a:hover,
-ul#menu li a:active {
-	background: #a8b295;
-	color:#061c06;
-	outline: 0;
+	
 }
 
 
 
 
 
-/*
-**
-** Font sizes: Pixel to percent conversion:
-** 		10px = 77%
-** 		11px = 85%
-** 		12px = 93%
-** 		13px = 100%
-** 		14px = 108%
-** 		15px = 116%
-** 		16px = 123.1%
-** 		17px = 131%
-** 		18px = 138.5%
-** 		19px = 146.5%
-** 		20px = 153.9%
-** 		21px = 161.6%
-** 		22px = 167%
-** 		23px = 174%
-** 		24px = 182%
-** 		25px = 189%
-** 		26px = 197%
-**
-*/
 
-/*
-**
-** Notice: Links must follow this order:
-**
-**         a (a:link)
-**         a:visited
-**         a:visited:hover
-**         a:focus
-**         a:focus:hover
-**         a:hover
-**         a:active
-**
-**   Note: If you are already targeting "a", "a:link" becomes superfluous.
-**
-*/
 
-a {
-	color: #057db9;
-	font-weight: bold;
-	text-decoration: none;
-}
-a:visited { color: #057db9; }
-a:visited:hover,
-a:focus,
-a:focus:hover,
-a:hover,
-a:active {
-	color: #057db9;
-	text-decoration: underline;
-}
+
+
+
+
 
 /*Divs:*/
 #footer a{
@@ -497,13 +427,13 @@ xth {
 	background-color: #3A700C;
 	font-size: 120%;
 	vertical-align: bottom;
-	padding: 0px 10px 5px 10px;
+	padding: 0 10px 5px 10px;
 }
 xtd {
-	padding: 0px 10px 5px 10px;
+	padding: 0 10px 5px 10px;
 	vertical-align: top;
 	border: 1px solid #c4d6b6;
-	border-left: 0px;
+	border-left: 0;
 }
 
 /* Classes */
@@ -543,12 +473,12 @@ ul.math li.result {
 	color: #009900;
 }
 .singleTestimonial {
-	margin: 0px;
-	padding: 10px 0px;
+	margin: 0;
+	padding: 10px 0;
 	border-top: 1px solid #99FF99;
-	border-right: 0px none #99FF99;
-	border-bottom: 0px none #99FF99;
-	border-left: 0px none #99FF99;
+	border-right: 0 none #99FF99;
+	border-bottom: 0 none #99FF99;
+	border-left: 0 none #99FF99;
 }
 .warning {
 	font-size: 123.1%;
@@ -577,13 +507,13 @@ p .shortP {
 
 /*Padding: */
 .padTop {
-	padding: 30px 0px 0px 0px;
+	padding: 30px 0 0 0;
 }
 .padTopLess {
-	padding: 10px 0px 0px 0px;
+	padding: 10px 0 0 0;
 }
 .padBtm {
-	padding: 0px 0px 10px 0px;
+	padding: 0 0 10px 0;
 }
 
 /* Floats: */
@@ -608,7 +538,7 @@ p .shortP {
 
 .boxSidebar {
 	border:1px solid #89ad6d;
-	margin: 0px -30px;
+	margin: 0 -30px;
 	padding: 15px 30px;
 	background: #d4e1c3;
 }
@@ -695,13 +625,13 @@ input[type="hidden"], input[type="hidden"]:focus
     display: block;
 	padding: 0;
     margin: 0;
-    border: solid 0px #OC1802;
+    border: solid 0 #OC1802;
     background-color: "transparent";
 }
 
 input [type="image"], input[type="image"]:focus
 {
-	border-width: 0px;
+	border-width: 0;
     background-color: "transparent";
 	padding: 0;
     margin: 0;
@@ -759,4 +689,28 @@ ul#menu li ul,
 ul#menu li ol,
 .ui-tabs-hide {
      display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.clear {
+	
+	&:after {
+		height: 0;
+		display: block;
+		clear: both;
+		content: '.';
+		visibility: hidden;
+	}
+	
+	* html & { zoom: 1; }
+	
 }
