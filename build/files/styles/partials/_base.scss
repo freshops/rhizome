@@ -36,10 +36,10 @@ a {
 		color: #057db9;
 		text-decoration: none;
 	}
-	&:visited:hover,
+	.no-touch &:visited:hover,
 	&:focus,
-	&:focus:hover,
-	&:hover,
+	.no-touch &:focus:hover,
+	.no-touch &:hover,
 	&:active {
 		color: #057db9;
 		text-decoration: underline;

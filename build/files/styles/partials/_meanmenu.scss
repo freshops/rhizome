@@ -17,10 +17,10 @@ a.meanmenu-reveal { display: none; }
 		
 		&,
 		&:visited,
-		&:visited:hover,
+		.no-touch &:visited:hover,
 		&:focus,
-		&:focus:hover,
-		&:hover,
+		.no-touch &:focus:hover,
+		.no-touch &:hover,
 		&:active {
 			color: #f6f9f1;
 			text-decoration: none;
@@ -63,10 +63,10 @@ a.meanmenu-reveal { display: none; }
 				
 				&,
 				&:visited,
-				&:visited:hover,
+				.no-touch &:visited:hover,
 				&:focus,
-				&:focus:hover,
-				&:hover,
+				.no-touch &:focus:hover,
+				.no-touch &:hover,
 				&:active { color: #939d83; }
 				
 			}

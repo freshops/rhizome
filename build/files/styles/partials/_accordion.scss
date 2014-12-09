@@ -66,10 +66,10 @@
 					
 					&,
 					&:visited { color: #719b37; }
-					&:visited:hover,
+					.no-touch &:visited:hover,
 					&:focus,
-					&:focus:hover,
-					&:hover,
+					.no-touch &:focus:hover,
+					.no-touch &:hover,
 					&:active {
 						color: #bbb749;
 						text-decoration: none;
@@ -103,10 +103,10 @@
 			
 			&,
 			&:visited { color: #f6f9f1; }
-			&:visited:hover,
+			.no-touch &:visited:hover,
 			&:focus,
-			&:focus:hover,
-			&:hover,
+			.no-touch &:focus:hover,
+			.no-touch &:hover,
 			&:active {
 				color: #061c06;
 				background: #a8b295;

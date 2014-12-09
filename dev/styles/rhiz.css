@@ -426,7 +426,7 @@ a.meanmenu-reveal {
   line-height: 45px;
   display: block;
 }
-.mean-bar a, .mean-bar a:visited, .mean-bar a:visited:hover, .mean-bar a:focus, .mean-bar a:focus:hover, .mean-bar a:hover, .mean-bar a:active {
+.mean-bar a, .mean-bar a:visited, .no-touch .mean-bar a:visited:hover, .mean-bar a:focus, .no-touch .mean-bar a:focus:hover, .no-touch .mean-bar a:hover, .mean-bar a:active {
   color: #f6f9f1;
   text-decoration: none;
 }
@@ -455,7 +455,7 @@ a.meanmenu-reveal {
   background: #151713;
   padding-left: 20px;
 }
-.mean-bar li li a, .mean-bar li li a:visited, .mean-bar li li a:visited:hover, .mean-bar li li a:focus, .mean-bar li li a:focus:hover, .mean-bar li li a:hover, .mean-bar li li a:active {
+.mean-bar li li a, .mean-bar li li a:visited, .no-touch .mean-bar li li a:visited:hover, .mean-bar li li a:focus, .no-touch .mean-bar li li a:focus:hover, .no-touch .mean-bar li li a:hover, .mean-bar li li a:active {
   color: #939d83;
 }
 .mean-bar li li li a {
@@ -560,7 +560,7 @@ a.meanmenu-reveal {
   #order ul li a, #order ul li a:visited {
     color: #719b37;
   }
-  #order ul li a:visited:hover, #order ul li a:focus, #order ul li a:focus:hover, #order ul li a:hover, #order ul li a:active {
+  .no-touch #order ul li a:visited:hover, #order ul li a:focus, .no-touch #order ul li a:focus:hover, .no-touch #order ul li a:hover, #order ul li a:active {
     color: #bbb749;
     text-decoration: none;
   }
@@ -579,7 +579,7 @@ a.meanmenu-reveal {
   #menu > ul a, #menu > ul a:visited {
     color: #f6f9f1;
   }
-  #menu > ul a:visited:hover, #menu > ul a:focus, #menu > ul a:focus:hover, #menu > ul a:hover, #menu > ul a:active {
+  .no-touch #menu > ul a:visited:hover, #menu > ul a:focus, .no-touch #menu > ul a:focus:hover, .no-touch #menu > ul a:hover, #menu > ul a:active {
     color: #061c06;
     background: #a8b295;
     text-decoration: none;
@@ -672,7 +672,7 @@ a, a:visited {
   color: #057db9;
   text-decoration: none;
 }
-a:visited:hover, a:focus, a:focus:hover, a:hover, a:active {
+.no-touch a:visited:hover, a:focus, .no-touch a:focus:hover, .no-touch a:hover, a:active {
   color: #057db9;
   text-decoration: underline;
 }
@@ -707,7 +707,7 @@ a:visited:hover, a:focus, a:focus:hover, a:hover, a:active {
   height: 100%;
   display: block;
 }
-#flag a:hover {
+.no-touch #flag a:hover {
   background-position: 0 0;
 }
 #flag a:active, #flag a:focus {
@@ -859,7 +859,7 @@ a:visited:hover, a:focus, a:focus:hover, a:hover, a:active {
   text-decoration: none;
   color: #2d3e16;
 }
-#footer a:hover {
+.no-touch #footer a:hover {
   text-decoration: underline;
 }
 
@@ -897,7 +897,7 @@ a:visited:hover, a:focus, a:focus:hover, a:hover, a:active {
 .nav ul li a:visited {
   color: #6c6e73;
 }
-.nav ul li a:visited:hover, .nav ul li a:focus, .nav ul li a:focus:hover, .nav ul li a:hover, .nav ul li a:active, .ui-tabs-selected .nav ul li a {
+.no-touch .nav ul li a:visited:hover, .nav ul li a:focus, .no-touch .nav ul li a:focus:hover, .no-touch .nav ul li a:hover, .nav ul li a:active, .ui-tabs-selected .nav ul li a {
   color: #fff;
   background: #96b477 url(../images/border-04.png) repeat-x left bottom;
 }

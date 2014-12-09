@@ -39,7 +39,7 @@
 		height: 100%;
 		display: block;
 		
-		&:hover { background-position: 0 0; }
+		.no-touch &:hover { background-position: 0 0; }
 		&:active,
 		&:focus { outline: none; }
 		
@@ -237,7 +237,7 @@
 		text-decoration: none;
 		color: #2d3e16;
 		
-		&:hover { text-decoration: underline; }
+		.no-touch &:hover { text-decoration: underline; }
 		
 	}
 	
@@ -280,10 +280,10 @@
 				cursor: pointer;
 				
 				&:visited { color: #6c6e73; }
-				&:visited:hover,
+				.no-touch &:visited:hover,
 				&:focus,
-				&:focus:hover,
-				&:hover,
+				.no-touch &:focus:hover,
+				.no-touch &:hover,
 				&:active,
 				.ui-tabs-selected & {
 					color: #fff;
