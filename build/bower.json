@@ -1,6 +1,7 @@
 {
   "name": "bower",
   "dependencies": {
+    "dcjqaccordion": "~2",
     "fastclick": "~1",
     "nutshell": "https://github.com/mhulse/jquery-nutshell.git#v1",
     "jquery": "~2",
@@ -9,13 +10,15 @@
     "normalize-css": "~3"
   },
   "exportsOverride": {
+    "dcjqaccordion": {
+      "": "js/jquery.dcjqaccordion.2.7.js"
+    },
     "jquery": {
       "": "dist/jquery.js"
     },
     "meanMenu": {
       "": [
-        "jquery.meanmenu.js",
-        "meanmenu.css"
+        "jquery.meanmenu.js"
       ]
     }
   }

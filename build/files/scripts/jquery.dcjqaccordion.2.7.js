@@ -1,0 +1,1 @@
+../plugins/dcjqaccordion/jquery.dcjqaccordion.2.7.js

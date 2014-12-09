@@ -4,10 +4,12 @@
 // Plugins:
 @import "partials/normalize",
         "partials/meanmenu",
-        "partials/meanmenu-override";
+        "partials/accordion",
+        "partials/tabs";
 
 // Core:
-@import "partials/base";
+@import "partials/base",
+        "partials/layout";
 
 // To be sorted:
 @import "partials/pending";
