@@ -418,7 +418,7 @@ a.meanmenu-reveal {
   background: #000;
   min-height: 45px;
   position: relative;
-  z-index: 20;
+  z-index: 10;
   padding: 1px 0;
   margin: -1px 0;
 }
@@ -673,10 +673,10 @@ a, a:visited {
   text-decoration: underline;
 }
 
-#container {
-  position: relative;
-}
 @media all and (min-width: 640px) {
+  #container {
+    position: relative;
+  }
   #container::after {
     content: "";
     display: table;
@@ -690,9 +690,9 @@ a, a:visited {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 5px;
+  top: 3px;
   left: 10px;
-  z-index: 10;
+  z-index: 20;
 }
 #flag a {
   text-indent: -999em;
