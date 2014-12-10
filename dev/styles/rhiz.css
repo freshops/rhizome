@@ -804,7 +804,7 @@ a, a:visited {
 #location div {
   background: url(../images/grunge-01.png) no-repeat left bottom;
 }
-#location div h1 {
+#location h3 {
   font-size: 22px;
   text-transform: uppercase;
   line-height: 1;
@@ -814,7 +814,26 @@ a, a:visited {
   padding: 10px 0;
 }
 @media all and (min-width: 960px) {
-  #location div h1 {
+  #location h3 {
+    margin-left: 95px;
+  }
+}
+
+.deck {
+  background: #c9d9af url(../images/border-02.png) repeat-x left bottom;
+}
+.deck div {
+  background: url(../images/grunge-02.png) no-repeat left bottom;
+}
+.deck h4 {
+  font-size: 18px;
+  line-height: 1;
+  color: #061c06;
+  margin: 0 0 0 20px;
+  padding: 10px 0;
+}
+@media all and (min-width: 960px) {
+  .deck h4 {
     margin-left: 95px;
   }
 }
@@ -863,12 +882,6 @@ a, a:visited {
   display: none;
 }
 
-#submenu {
-  background: #c9d9af url(../images/border-02.png) repeat-x left bottom;
-}
-#submenu div {
-  background: url(../images/grunge-02.png) no-repeat left bottom;
-}
 #submenu ul {
   margin: 0 0 0 10px;
   padding: 0;
