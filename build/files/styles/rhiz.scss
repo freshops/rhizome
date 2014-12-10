@@ -1,16 +1,7 @@
-// Helpers:
-@import "partials/variable";
-
-// Plugins:
 @import "partials/normalize",
         "partials/meanmenu",
         "partials/accordion",
-        "partials/tabs";
-
-// Core:
-@import "partials/base",
+        "partials/base",
         "partials/layout",
-        "partials/tab";
-
-// To be sorted:
-@import "partials/pending";
+        "partials/tab",
+        "partials/pending";

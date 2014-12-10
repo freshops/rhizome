@@ -5,7 +5,9 @@ RHIZ.register(function() {
 	var $order = $('#order');
 	if ($order.length) {
 		
-		$order.click(function() {
+		$order.click(function($e) {
+			
+			$e.preventDefault();
 			
 			$order.children('ul').animate({
 				opacity: 'toggle',

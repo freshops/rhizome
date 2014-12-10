@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2014 Micky Hulse.
  * @license Released under the Copyright © 2014 Freshops. All rights reserved..
  * @version 0.1.0
- * @date 2014/12/08
+ * @date 2014/12/09
  */
 
 
@@ -644,10 +644,6 @@ a.meanmenu-reveal {
   }
 }
 
-.ui-tabs-hide {
-  display: none;
-}
-
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -659,7 +655,7 @@ html {
   height: auto !important;
   height: 100%;
   min-height: 100%;
-  background: #c9d9af;
+  background-color: #c9d9af;
 }
 @media all and (min-width: 640px) {
   html {
@@ -863,29 +859,33 @@ a, a:visited {
   text-decoration: underline;
 }
 
-.nav {
+.ui-tabs-hide {
+  display: none;
+}
+
+#submenu {
   background: #c9d9af url(../images/border-02.png) repeat-x left bottom;
 }
-.nav div {
+#submenu div {
   background: url(../images/grunge-02.png) no-repeat left bottom;
 }
-.nav ul {
+#submenu ul {
   margin: 0 0 0 10px;
   padding: 0;
 }
-.nav ul::after {
+#submenu ul::after {
   content: "";
   display: table;
   clear: both;
 }
-.nav ul li {
+#submenu ul li {
   list-style-type: none;
   margin: 0;
   padding: 0;
   float: left;
   display: inline;
 }
-.nav ul li a {
+#submenu ul li a {
   font-size: 100%;
   font-weight: bold;
   text-decoration: none;
@@ -894,19 +894,19 @@ a, a:visited {
   display: block;
   cursor: pointer;
 }
-.nav ul li a:visited {
+#submenu ul li a:visited {
   color: #6c6e73;
 }
-.no-touch .nav ul li a:visited:hover, .nav ul li a:focus, .no-touch .nav ul li a:focus:hover, .no-touch .nav ul li a:hover, .nav ul li a:active, .ui-tabs-selected .nav ul li a {
+.no-touch #submenu ul li a:visited:hover, #submenu ul li a:focus, .no-touch #submenu ul li a:focus:hover, .no-touch #submenu ul li a:hover, #submenu ul li a:active, .ui-tabs-selected #submenu ul li a {
   color: #fff;
   text-decoration: none;
   background: #96b477 url(../images/border-04.png) repeat-x left bottom;
 }
-.nav ul li a:active, .nav ul li a:focus {
+#submenu ul li a:active, #submenu ul li a:focus {
   outline: 0;
 }
 @media all and (min-width: 960px) {
-  .nav ul {
+  #submenu ul {
     margin-left: 95px;
   }
 }
