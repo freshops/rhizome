@@ -79,7 +79,7 @@ a.meanmenu-reveal {
     padding: 0 0 10px;
     background: #1a1a1a; }
     #order #cta {
-      background: url(../images/order-button.png) no-repeat center top;
+      background: url(../images/rhizome/order-button.png) no-repeat center top;
       height: 50px;
       -webkit-touch-callout: none;
       -webkit-tap-highlight-color: transparent;
@@ -159,7 +159,7 @@ a.meanmenu-reveal {
         line-height: 0;
         width: 8px;
         height: 8px;
-        background-image: url(../images/plus-minus.gif);
+        background-image: url(../images/rhizome/plus-minus.gif);
         background-size: cover;
         background-repeat: no-repeat;
         opacity: .5;
@@ -202,7 +202,7 @@ html {
   background-color: #c9d9af; }
   @media all and (min-width: 640px) {
     html {
-      background-image: url(../images/bg.png);
+      background-image: url(../images/rhizome/bg.png);
       background-repeat: repeat-y; } }
 
 a, a:visited {
@@ -231,7 +231,7 @@ a, a:visited {
   z-index: 20; }
   #flag a {
     text-indent: -999em;
-    background-image: url(../images/freshops-logo-small.png);
+    background-image: url(../images/rhizome/freshops-logo-small.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -243,7 +243,7 @@ a, a:visited {
       outline: none; }
     @media all and (min-width: 640px) {
       #flag a {
-        background-image: url(../images/freshops-logo.png);
+        background-image: url(../images/rhizome/freshops-logo.png);
         background-position: 0 -247px; } }
   @media all and (min-width: 640px) {
     #flag {
@@ -270,7 +270,7 @@ a, a:visited {
   #hops {
     position: relative; }
     #hops div {
-      background: url(../images/hop-graphic.png) no-repeat;
+      background: url(../images/rhizome/hop-graphic.png) no-repeat;
       width: 301px;
       height: 644px;
       position: absolute;
@@ -294,14 +294,14 @@ a, a:visited {
       width: 100%;
       float: left;
       display: inline;
-      background-image: url(../images/shadow-02.png);
+      background-image: url(../images/rhizome/shadow-02.png);
       background-repeat: repeat-y; } }
 
 #badge {
   display: none; }
   @media all and (min-width: 960px) {
     #badge {
-      background: url(../images/badge.png) no-repeat;
+      background: url(../images/rhizome/badge.png) no-repeat;
       width: 79px;
       height: 79px;
       display: block;
@@ -311,9 +311,9 @@ a, a:visited {
       left: 10px; } }
 
 #location {
-  background: #fafcf8 url(../images/border-01.png) repeat-x left bottom; }
+  background: #fafcf8 url(../images/rhizome/border-01.png) repeat-x left bottom; }
   #location div {
-    background: url(../images/grunge-01.png) no-repeat left bottom; }
+    background: url(../images/rhizome/grunge-01.png) no-repeat left bottom; }
   #location h1 {
     font-size: 22px;
     text-transform: uppercase;
@@ -327,9 +327,9 @@ a, a:visited {
         margin-left: 95px; } }
 
 .deck {
-  background: #c9d9af url(../images/border-02.png) repeat-x left bottom; }
+  background: #c9d9af url(../images/rhizome/border-02.png) repeat-x left bottom; }
   .deck div {
-    background: url(../images/grunge-02.png) no-repeat left bottom; }
+    background: url(../images/rhizome/grunge-02.png) no-repeat left bottom; }
   .deck h2 {
     font-size: 18px;
     line-height: 1;
@@ -341,7 +341,7 @@ a, a:visited {
         margin-left: 95px; } }
 
 #content {
-  background: url(../images/grunge-03.png) no-repeat;
+  background: url(../images/rhizome/grunge-03.png) no-repeat;
   padding: 10px 20px;
   min-height: 600px; }
   @media all and (min-width: 640px) {
@@ -351,12 +351,12 @@ a, a:visited {
 #footer {
   font-size: smaller;
   line-height: 1.5;
-  background: #c9d9af url(../images/border-03.png) repeat-x;
+  background: #c9d9af url(../images/rhizome/border-03.png) repeat-x;
   height: 359px; }
   #footer div {
     height: 359px;
     padding: 10px 20px;
-    background: url(../images/grunge-04.png) no-repeat; }
+    background: url(../images/rhizome/grunge-04.png) no-repeat; }
     #footer div p {
       color: #394e1c;
       margin: 0;
@@ -370,7 +370,7 @@ a, a:visited {
     .no-touch #footer a:hover {
       text-decoration: underline; }
 
-.ui-tabs-hide {
+.js .panel {
   display: none; }
 
 #submenu ul {
@@ -396,12 +396,55 @@ a, a:visited {
       cursor: pointer; }
       #submenu ul li a:visited {
         color: #6c6e73; }
-      .no-touch #submenu ul li a:visited:hover, #submenu ul li a:focus, .no-touch #submenu ul li a:focus:hover, .no-touch #submenu ul li a:hover, #submenu ul li a:active, .ui-tabs-selected #submenu ul li a {
+      .no-touch #submenu ul li a:visited:hover, #submenu ul li a:focus, .no-touch #submenu ul li a:focus:hover, .no-touch #submenu ul li a:hover, #submenu ul li a:active, #submenu ul li a.nutshell-selected {
         color: #fff;
         text-decoration: none;
-        background: #96b477 url(../images/border-04.png) repeat-x left bottom; }
+        background: #96b477 url(../images/rhizome/border-04.png) repeat-x left bottom; }
       #submenu ul li a:active, #submenu ul li a:focus {
         outline: 0; }
   @media all and (min-width: 960px) {
     #submenu ul {
       margin-left: 95px; } }
+
+.fix {
+  *zoom: 1; }
+  .fix:before, .fix:after {
+    content: " ";
+    display: table; }
+  .fix:after {
+    clear: both; }
+
+.gone {
+  display: none !important;
+  visibility: hidden; }
+
+.off {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.ghost {
+  visibility: hidden; }
+
+.nix, .nix:focus, .no-touch .nix:hover, .nix:active {
+  color: transparent;
+  text-decoration: none;
+  outline: 0;
+  border: 0; }
+
+.force {
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding: 1px 0; }
+
+.nono {
+  word-wrap: break-word;
+  overflow-wrap: break-word; }
+
+.none {
+  max-width: none; }

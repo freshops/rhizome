@@ -31,7 +31,7 @@
 		
 		text-indent: -999em;
 		background: {
-			image: url(../images/freshops-logo-small.png);
+			image: url(../images/rhizome/freshops-logo-small.png);
 			repeat: no-repeat;
 			size: cover;
 		}
@@ -46,7 +46,7 @@
 		@media all and (min-width: 640px) {
 			
 			background: {
-				image: url(../images/freshops-logo.png);
+				image: url(../images/rhizome/freshops-logo.png);
 				position: 0 -247px;
 			}
 			
@@ -92,7 +92,7 @@
 		position: relative;
 		
 		div {
-			background: url(../images/hop-graphic.png) no-repeat;
+			background: url(../images/rhizome/hop-graphic.png) no-repeat;
 			width: 301px;
 			height: 644px;
 			position: absolute;
@@ -134,7 +134,7 @@
 		float: left;
 		display: inline;
 		background: {
-			image: url(../images/shadow-02.png);
+			image: url(../images/rhizome/shadow-02.png);
 			repeat: repeat-y;
 		}
 		
@@ -148,7 +148,7 @@
 	
 	@media all and (min-width: 960px) {
 		
-		background: url(../images/badge.png) no-repeat;
+		background: url(../images/rhizome/badge.png) no-repeat;
 		width: 79px;
 		height: 79px;
 		display: block;
@@ -163,9 +163,9 @@
 
 #location {
 	
-	background: #fafcf8 url(../images/border-01.png) repeat-x left bottom;
+	background: #fafcf8 url(../images/rhizome/border-01.png) repeat-x left bottom;
 	
-	div { background: url(../images/grunge-01.png) no-repeat left bottom; }
+	div { background: url(../images/rhizome/grunge-01.png) no-repeat left bottom; }
 	
 	h1 {
 		
@@ -189,9 +189,9 @@
 
 .deck {
 	
-	background: #c9d9af url(../images/border-02.png) repeat-x left bottom;
+	background: #c9d9af url(../images/rhizome/border-02.png) repeat-x left bottom;
 	
-	div { background: url(../images/grunge-02.png) no-repeat left bottom; }
+	div { background: url(../images/rhizome/grunge-02.png) no-repeat left bottom; }
 	
 	h2 {
 		
@@ -213,7 +213,7 @@
 
 #content {
 	
-	background: url(../images/grunge-03.png) no-repeat;
+	background: url(../images/rhizome/grunge-03.png) no-repeat;
 	padding: 10px 20px;
 	min-height: 600px; // Just looks better.
 	
@@ -229,14 +229,14 @@
 	
 	font-size: smaller;
 	line-height: 1.5;
-	background: #c9d9af url(../images/border-03.png) repeat-x;
+	background: #c9d9af url(../images/rhizome/border-03.png) repeat-x;
 	height: 359px;
 	
 	div {
 		
 		height: 359px;
 		padding: 10px 20px;
-		background: url(../images/grunge-04.png) no-repeat;
+		background: url(../images/rhizome/grunge-04.png) no-repeat;
 		
 		p {
 			color: #394e1c;
