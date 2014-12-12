@@ -1,1 +1,0 @@
-../plugins/jquery.cookie/jquery.cookie.js

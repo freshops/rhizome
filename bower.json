@@ -1,0 +1,30 @@
+{
+  "name": "bower",
+  "dependencies": {
+    "dcjqaccordion": "~2",
+    "fastclick": "~1",
+    "nutshell": "https://github.com/mhulse/jquery-nutshell.git#v1",
+    "jquery": "~2",
+    "jquery.cookie": "~1",
+    "meanMenu": "https://github.com/meanthemes/meanMenu.git",
+    "normalize-css": "~3"
+  },
+  "install": {
+    "path": {
+      "css": "assets/styles/css/plugins",
+      "js": "assets/scripts/plugins"
+    },
+    "sources": {
+      "dcjqaccordion": {
+        "mapping": [
+          { "bower_components/dcjqaccordion/js/jquery.dcjqaccordion.2.7.js": "jquery.dcjqaccordion.2.7.js" }
+        ]
+      },
+      "meanMenu": {
+        "mapping": [
+          { "bower_components/meanMenu/jquery.meanmenu.js": "jquery.meanmenu.js" }
+        ]
+      }
+    }
+  }
+}
