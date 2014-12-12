@@ -60,13 +60,13 @@ $ brew update
 $ brew doctor
 ```
 
-… That’s all folks!
-
 <p align="center">
 	<a href="http://www.imdb.com/title/tt0096256/" target="_blank">
 		<img width="100%" src="https://cloud.githubusercontent.com/assets/218624/5407778/852e1be2-8182-11e4-8222-c8d41fc204aa.gif" alt="That’s all folks!">
 	</a>
 </p>
+
+… That’s all folks!
 
 ---
 
