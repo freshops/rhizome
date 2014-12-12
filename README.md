@@ -26,10 +26,11 @@ $ bundle install
 $ bundle update
 # Have Sass watch while you develop:
 $ sass --watch assets/scss:assets/css --sourcemap=none --trace
+```
 
 Get latest plugins:
 
-```
+```bash
 # Bower setup:
 $ npm install
 # Install or update Bower dependencies:
