@@ -23,7 +23,7 @@ $ curl -#L https://github.com/freshops/rhizome/tarball/gh-pages | tar -xzv --str
 
 ## Development commands
 
-Assuming you have [npm](http://npmjs.org/), [rvm/Ruby](https://rvm.io/) and [Bundler](http://bundler.io/) installed …
+Assuming you have [Homebrew](http://brew.sh/), [npm](http://npmjs.org/), [rvm/Ruby](https://rvm.io/) and [Bundler](http://bundler.io/) installed …
 
 … run and develop Sass:
 
