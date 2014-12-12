@@ -8,14 +8,14 @@ This repo exists purely for the sake of testing base theme assets.
 
 Due to our WordPress setup, one should only copy the `rhizome` folder from [here](https://github.com/freshops/rhizome/tree/master/assets/scss) (this repo: `assets/scss`), and copy it to [here](https://github.com/freshops/freshops/tree/master/library/scss) (Freshops WordPress theme: `library/scss`).
 
-As a conveinence, use this bash command for quick updates:
+As a copy/paste conveinence use this bash command:
 
 ```bash
 # In the Freshops WordPress theme, cd to library/scss and run:
 $ curl -#L https://github.com/freshops/rhizome/tarball/gh-pages | tar -xzv --strip-components 3 --include=*./assets/scss
 ```
 
-The above command will replace all Rhizome-specific scss files/folders.
+… that will replace all Rhizome-specific scss files/folders.
 
 **Note:** The other plugins used in this repo (check [`bower.json`](bower.json)) are handled by WordPress, so don’t worry about copying them (other than make sure they match between code bases).
 
