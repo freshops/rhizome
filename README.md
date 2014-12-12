@@ -23,7 +23,9 @@ $ curl -#L https://github.com/freshops/rhizome/tarball/gh-pages | tar -xzv --str
 
 ## Development commands
 
-Run and develop Sass:
+Assuming you have [npm](http://npmjs.org/), [rvm/Ruby](https://rvm.io/) and [Bundler](http://bundler.io/) installed …
+
+… run and develop Sass:
 
 ```bash
 $ cd rhizome/
@@ -35,7 +37,7 @@ $ bundle update
 $ bundle exec sass --watch assets/scss:assets/css --sourcemap=none --trace
 ```
 
-Get latest plugins:
+… get latest plugins:
 
 ```bash
 # Bower setup:
@@ -44,7 +46,7 @@ $ npm install
 $ npm run bower-installer
 ```
 
-Occasionally:
+… occasionally execute:
 
 ```bash
 # Update rvm:
@@ -57,6 +59,10 @@ $ gem update
 $ brew update
 $ brew doctor
 ```
+
+… That’s all folks!
+
+![giphy](https://cloud.githubusercontent.com/assets/218624/5407778/852e1be2-8182-11e4-8222-c8d41fc204aa.gif)
 
 ---
 
