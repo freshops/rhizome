@@ -66,7 +66,7 @@ $ brew doctor
 	</a>
 </p>
 
-… That’s all folks!
+That’s all folks!
 
 ---
 
