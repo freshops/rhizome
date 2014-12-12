@@ -6,12 +6,14 @@ This repo exists purely for the sake of testing base theme assets.
 
 ## About
 
-Due to our WordPress setup, one should only copy the `rhizome` folder from [here](https://github.com/freshops/rhizome/tree/master/assets/scss) (this repo: `assets/scss`), and copy it to [here](https://github.com/freshops/freshops/tree/master/library/scss) (Freshops WordPress theme: `library/scss`).
+Due to our WordPress setup, one should only copy the `rhizome` folder from [here](https://github.com/freshops/rhizome/tree/master/assets/scss) (this repo: `assets/scss`), and copy it to [here](https://github.com/freshops/freshops/tree/master/library/scss) ([Freshops WordPress theme](https://github.com/freshops/freshops): `library/scss`).
 
 As a copy/paste conveinence use this bash command:
 
 ```bash
-# In the Freshops WordPress theme, cd to library/scss and run:
+# Navigate to here:
+$ cd freshops/content/themes/freshops/library/scss
+# ... and run:
 $ curl -#L https://github.com/freshops/rhizome/tarball/gh-pages | tar -xzv --strip-components 3 --include=*./assets/scss
 ```
 
