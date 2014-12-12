@@ -1,12 +1,12 @@
 # Rhizome
 
-**The Freshops theme.**
+**Freshops theme “shell” and other global styling.**
 
 This repo exists purely for the sake of testing base theme assets.
 
 ## About
 
-Due to our WordPress setup, one should only copy the `rhizome` folder from [here](https://github.com/freshops/rhizome/tree/master/assets/styles/scss), and copy it to [here](https://github.com/freshops/freshops/tree/master/library/scss).
+Due to our WordPress setup, one should only copy the `rhizome` folder from [here](https://github.com/freshops/rhizome/tree/master/assets/scss) (this repo: `assets/scss`), and copy it to [here](https://github.com/freshops/freshops/tree/master/library/scss) (Freshops WordPress theme: `library/scss`).
 
 The bower plugins used in this repo are handled by WordPress, so no need to worry about copying them (other than make sure they match between projects).
 
@@ -25,7 +25,7 @@ $ bundle install
 # … or:
 $ bundle update
 # Have Sass watch while you develop:
-$ sass --watch assets/styles/scss:assets/styles/css --sourcemap=none --trace
+$ sass --watch assets/scss:assets/css --sourcemap=none --trace
 
 Get latest plugins:
 
