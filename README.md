@@ -55,11 +55,21 @@ $ npm run bower-installer
 $ rvm get stable
 # Update rvm Ruby:
 $ rvm install current && rvm use current
+# Update RubyGems:
+$ gem update --system
 # Update rvm gems:
 $ gem update
 # Brew:
 $ brew update
 $ brew doctor
+```
+
+Other useful commands:
+
+```bash
+$ which ruby
+$ rvm list
+$ rvm all do gem list
 ```
 
 <p align="center">
