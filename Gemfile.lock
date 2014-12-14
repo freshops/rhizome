@@ -20,5 +20,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  listen
+  listen (~> 2.8)
   sass
